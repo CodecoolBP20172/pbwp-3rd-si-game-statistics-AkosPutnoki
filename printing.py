@@ -1,13 +1,18 @@
-import reports as r
+from reports import *
 
 
-def printint_text():
-    print_list = [r.count_games("game_stat.txt"), r.decide("game_stat.txt", 1999),
-                  r.get_latest("game_stat.txt"), r.count_by_genre("game_stat.txt", "RPG"),
-                  r.get_line_number_by_title("game_stat.txt", "Terraria"),
-                  r.sort_abc("game_stat.txt"), r.get_genres("game_stat.txt"),
-                  r.when_was_top_sold_fps("game_stat.txt")]
+def printint_text(file_name):
+    print_list = [count_games(file_name),
+                  decide(file_name, 1999),
+                  get_latest(file_name),
+                  count_by_genre(file_name, "RPG"),
+                  get_line_number_by_title(file_name, "Terraria"),
+                  sort_abc(file_name),
+                  get_genres(file_name),
+                  when_was_top_sold_fps(file_name)]
+
     for item in print_list:
         print(item)
 
-printint_text()
+
+printint_text("game_stat.txt")

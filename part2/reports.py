@@ -4,7 +4,7 @@ reports = imp.load_source("reports", "/home/akos/codeLUL/si3/pbwp-3rd-si-game-st
 
 
 def text_conversion(file_name):
-    path = "/home/akos/codeLUL/si3/pbwp-3rd-si-game-statistics-AkosPutnoki/%s" % file_name
+    path = "/home/akos/codeLUL/si3/pbwp-3rd-si-game-statistics-AkosPutnoki/part2/%s" % file_name
     textlist = []
     with open(path) as text:
         for line in text:
